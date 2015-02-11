@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class='container'>
+    <h2>Movie Tickets</h2>
+
+    <form id="new-ticket">
+
+      <div class="form-group">
+        <label type="text" for="movie-name" >Movie Name</label>
+        <select id="movie-name" class="form-control">
+          <option value="Kingsmen">Kingsmen</option>
+          <option value="The Last Five Years">The Last Five Years</option>
+          <option value="The Imitation Game">The Imitation Game</option>
+          <option value="Wild">Wild</option>
+          <option value="Big Hero 6">Big Hero 6</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label type="text" for="movie-time">Movie Showing</label>
+        <select id="movie-time" class="form-control">
+          <option value="10">10:00am</option>
+          <option value="12">12:00pm</option>
+          <option value="14">2:00pm</option>
+          <option value="16">4:00pm</option>
+          <option value="18">6:00pm</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label type="text" for="age">Your Age</label>
+        <input type="text" id="age" class="form-control">
+      </div>
+
+      <button type= "submit" class="btn btn-primary">Price the ticket</button>
+    </form>
+
+    <h3><span id="movie"></span></h3>
+    <span id="price"></span>
+  </div>
+
+</body>
+</html>
